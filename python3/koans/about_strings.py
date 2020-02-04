@@ -27,7 +27,7 @@ class AboutStrings(Koan):
 
     def test_use_single_quotes_to_create_string_with_double_quotes(self):
         string = 'He said, "Go Away."'
-        self.assertEqual('He said, "Go Away"', string)
+        self.assertEqual('He said, "Go Away."', string)
 
     def test_use_double_quotes_to_create_strings_with_single_quotes(self):
         string = "Don't"
@@ -71,7 +71,7 @@ world!
         hi = "Hello, "
         there = "world"
         string = hi + there
-        self.assertEqual("Hello", hi)
+        self.assertEqual("Hello, ", hi)
         self.assertEqual("world", there)
 
     def test_plus_equals_will_append_to_end_of_string(self):

@@ -49,7 +49,7 @@ class AboutLists(Koan):
         noms = ['peanut', 'butter', 'and', 'jelly']
 
         self.assertEqual(['and', 'jelly'], noms[2:])
-        self.assertEqual(['peanut, butter'], noms[:2])
+        self.assertEqual(['peanut', 'butter'], noms[:2])
 
     def test_lists_and_ranges(self):
         self.assertEqual(range, type(range(5)))
